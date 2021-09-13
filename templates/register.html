@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Register</title>
+    <link rel="stylesheet"  href="{% static 'styles/login.css' %}">
+  </head>
+  <body>
+    <div class="center">
+      <h1>Register</h1>
+      <form method="post">
+        <div class="txt_field">
+          <input type="text" >
+          <span></span>
+          <label>Full Name</label>
+        </div>
+
+        <div class="txt_field">
+            <input type="text" >
+            <span></span>
+            <label>Username</label>
+          </div>
+
+          <div class="txt_field">
+            <input type="text" >
+            <span></span>
+            <label>Email ID</label>
+          </div>
+
+        
+        <div class="txt_field">
+          <input type="password" >
+          <span></span>
+          <label>Password</label>
+        </div>
+        <a href= "login" input type="submit">REGISTER</a>
+      </form>
+    </div>
+
+  </body>
+</html>

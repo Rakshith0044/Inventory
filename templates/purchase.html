@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase</title>
+    <link rel="stylesheet" href="{% static 'styles/admin.css' %}">
+</head>
+<body>
+    <div class="menu text-center">
+        <div class="wrapper">
+            <ul>
+                <li><a href="admins">Home</a></li>
+                <li><a href="supplier">Suppliers</a></li>
+                <li><a href="purchase">Purchase Items</a></li>
+                <li><a href="sell">Sell Items</a></li>
+                <li><a href="#">My Stocks</a></li>
+                <li><a href="index">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content text-center">
+        <div class="wrapper"></div>
+        <h1>PURCHASE STOCK</h1>
+        <br/>
+
+        <form action="#" method="POST">{% csrf_token %}
+            <table class="tbl-30">
+                <tr>
+                    <td>Invoice No</td>
+                    <td><input type="text", name="invoice" placeholder=" "></td>
+                </tr>
+
+                <tr>
+                    <td>Item Name</td>
+                    <td><input type="text", name="item" placeholder=" "></td>
+                </tr>
+
+                <tr>
+                    <td>Item Quantity</td>
+                    <td><input type="text", name="qty" placeholder=" "></td>
+                </tr>
+
+                <tr>
+                    <td>Supplier Name</td>
+                    <td><input type="text", name="supname" placeholder=" "></td>
+                </tr>
+
+                <tr>
+                    <td>Bill Date</td>
+                    <td><input type="text", name="billdate" placeholder=" "></td>
+                </tr>
+
+                <tr>
+                    <td>Receiving Date</td>
+                    <td><input type="text", name="recdate" placeholder=" "></td>
+                </tr>
+
+                <tr>
+                    <td>Total Price</td>
+                    <td><input type="text", name="price" placeholder=" "></td>
+                </tr>
+
+            </table>
+            <input type="submit", value="save">
+        </form>
+
+        <br/><br/>
+
+            <a href="admins" class="btn-primary" type="submit" name="submit">Purchase</a>
+    </div>
+    
+
+    <div class="footer text-center">
+        <div class="wrapper"></div>
+            <p>All rights reserved</p>
+    </div>
+</body>
+</html>

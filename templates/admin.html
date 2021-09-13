@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{% static 'styles/admin.css' %}">
+</head>
+<body>
+    <div class="menu text-center">
+        <div class="wrapper">
+            <ul>
+                <li><a href="admins">Home</a></li>
+                <li><a href="supplier">Suppliers</a></li>
+                <li><a href="purchase">Purchase Items</a></li>
+                <li><a href="sell">Sell Items</a></li>
+                <li><a href="#">My Stocks</a></li>
+                <li><a href="index">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="main-content">
+        <div class="wrapper"></div>
+        <h1>DASHBOARD</h1>
+        <div class="col-4 text-center">
+            <h1>5</h1>
+            <br />
+            ORDER QUANTITY
+        </div>
+
+        <div class="col-4 text-center">
+            <h1>5</h1>
+            <br />
+            ORDER COST
+        </div>
+
+        <div class="col-4 text-center">
+            <h1>5</h1>
+            <br />
+            SALES QUANTITY
+        </div>
+
+        <div class="col-4 text-center">
+            <h1>5</h1>
+            <br />
+            SALES COST
+        </div>
+
+        <div class="clearfix"></div>
+
+    </div>
+
+
+    <div class="footer text-center">
+        <div class="wrapper"></div>
+        <p>All rights reserved</p>
+    </div>
+
+
+</body>
+</html>
